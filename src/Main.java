@@ -12,19 +12,11 @@ public class Main {
         people.add(new Person("Tolya", "Zabarchuk", 41));
         people.add(new Person("Svetlana", "Li Bo Hu", 13));
 
-        people.sort(new PersonComparator(5));
-//        System.out.println(people);
+        people.removeIf(person -> person.getAge() < 18);
 
         for (Person person : people) {
             System.out.println(person);
 
         }
-
-
-
-
-
-
-
     }
 }
